@@ -1,0 +1,93 @@
+{
+  "title": "Employee Onboarding Form",
+  "description": "Please fill out the following information to complete your onboarding process.",
+  "fields": [
+    {
+      "name": "fullName",
+      "label": "Full Name",
+      "type": "text",
+      "placeholder": "Enter your full name",
+      "required": true,
+      "validations": { "minLength": 2, "maxLength": 100 }
+    },
+    {
+      "name": "email",
+      "label": "Email Address",
+      "type": "text",
+      "placeholder": "Enter your email address",
+      "required": true,
+      "validations": { "regex": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$" }
+    },
+    {
+      "name": "phone",
+      "label": "Phone Number",
+      "type": "text",
+      "placeholder": "Enter your phone number",
+      "required": true,
+      "validations": { "regex": "^[+]?[0-9 ()-]{7,20}$" }
+    },
+    {
+      "name": "age",
+      "label": "Age",
+      "type": "number",
+      "placeholder": "Enter your age",
+      "required": true,
+      "validations": { "min": 18, "max": 100 }
+    },
+    {
+      "name": "department",
+      "label": "Department",
+      "type": "select",
+      "placeholder": "Select your department",
+      "required": true,
+      "options": [
+        { "label": "Engineering", "value": "engineering" },
+        { "label": "Human Resources", "value": "hr" },
+        { "label": "Sales", "value": "sales" },
+        { "label": "Marketing", "value": "marketing" },
+        { "label": "Operations", "value": "operations" }
+      ]
+    },
+    {
+      "name": "skills",
+      "label": "Skills",
+      "type": "multi-select",
+      "placeholder": "Select your skills",
+      "required": true,
+      "options": [
+        { "label": "JavaScript", "value": "javascript" },
+        { "label": "TypeScript", "value": "typescript" },
+        { "label": "React", "value": "react" },
+        { "label": "Node.js", "value": "nodejs" },
+        { "label": "Python", "value": "python" },
+        { "label": "Java", "value": "java" },
+        { "label": "SQL", "value": "sql" },
+        { "label": "AWS", "value": "aws" }
+      ],
+      "validations": { "minSelected": 1, "maxSelected": 8 }
+    },
+    {
+      "name": "startDate",
+      "label": "Start Date",
+      "type": "date",
+      "placeholder": "dd-mm-yyyy",
+      "required": true,
+      "validations": { "minDate": "2020-01-01" }
+    },
+    {
+      "name": "bio",
+      "label": "Bio",
+      "type": "textarea",
+      "placeholder": "Tell us about yourself",
+      "required": false,
+      "validations": { "maxLength": 500 }
+    },
+    {
+      "name": "remoteWork",
+      "label": "Remote Work",
+      "type": "switch",
+      "placeholder": "",
+      "required": false
+    }
+  ]
+}
