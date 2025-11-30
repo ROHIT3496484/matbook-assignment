@@ -35,44 +35,7 @@ Form Builder is a full-stack web application that enables organizations to colle
 
 ---
 
-## Project Structure
 
-
-\`\`\`
-form-builder/
-├── app/
-│   ├── api/
-│   │   ├── form-schema/
-│   │   │   └── route.ts           # GET form schema endpoint
-│   │   └── submissions/
-│   │       ├── route.ts           # GET/POST submissions
-│   │       └── [id]/
-│   │           └── route.ts       # GET/DELETE single submission
-│   ├── submissions/
-│   │   ├── page.tsx               # Submissions list page
-│   │   └── loading.tsx            # Loading state
-│   ├── globals.css                # Global styles
-│   ├── layout.tsx                 # Root layout
-│   └── page.tsx                   # Form page (home)
-├── components/
-│   ├── ui/                        # Reusable UI components
-│   │   ├── button.tsx
-│   │   ├── input.tsx
-│   │   ├── select.tsx
-│   │   ├── checkbox.tsx
-│   │   ├── switch.tsx
-│   │   ├── dialog.tsx
-│   │   └── table.tsx
-│   └── dynamic-form.tsx           # Main form component
-├── lib/
-│   ├── submissions-store.ts       # In-memory data store
-│   └── utils.ts                   # Utility functions
-├── public/                        # Static assets
-├── package.json
-├── tailwind.config.ts
-├── tsconfig.json
-└── README.md
-\`\`\`
 
 
 
