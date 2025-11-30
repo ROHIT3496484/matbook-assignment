@@ -37,7 +37,7 @@ Form Builder is a full-stack web application that enables organizations to colle
 
 ## Project Structure
 
-\`\`\`
+
 form-builder/
 │
 ├── app/
@@ -79,7 +79,7 @@ form-builder/
 ├── tailwind.config.ts
 ├── tsconfig.json
 └── README.md
-\`\`\`
+
 
 ---
 
@@ -168,8 +168,8 @@ DELETE /api/submissions/:id
 
 **1. Clone the repository**
 \`\`\`bash
-git clone https://github.com/ROHIT3496484/v0-matbook-assignment.git
-cd v0-matbook-assignment
+git clone https://github.com/ROHIT3496484/matbook-assignment.git
+cd matbook-assignment
 \`\`\`
 
 **2. Install dependencies**
